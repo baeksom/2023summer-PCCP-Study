@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class Solution05 {
 	public int[] solution(int[] nums, int target){
 		int[] answer = new int[2];
 
@@ -40,12 +40,24 @@ class Solution {
         }
         */
 
+        // 3. O(n)
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(nums[0], 1);
+        for(int i=1; i<nums.length; i++){
+            int gap = target - nums[i];
+            if(map.containsKey(gap)){
+                answer[0] = nums[i];
+                answer[1] = gap;
+            }
+            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
+        }
+        Arrays.sort(answer);
         
 		return answer;
 	}
 
 	public static void main(String[] args){
-		Solution T = new Solution();
+		Solution05 T = new Solution05();
 		System.out.println(Arrays.toString(T.solution(new int[]{3, 7, 2, 12, 9, 15, 8}, 12)));
 		System.out.println(Arrays.toString(T.solution(new int[]{21, 12, 30, 15, 6, 2, 9, 19, 14}, 24)));
 		System.out.println(Arrays.toString(T.solution(new int[]{12, 18, 5, 8, 21, 27, 22, 25, 16, 2}, 28)));
