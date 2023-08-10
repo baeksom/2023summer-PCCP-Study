@@ -2,7 +2,7 @@
 
 2023.08.09 ~ 2023.08.18  
 PCCP test date - 2023.08.20(Sun)  
-Language - Java  
+Language - Java   
 
 <br/>
 <br/>
