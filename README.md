@@ -6,6 +6,7 @@ Language - Java
 
 <br/>
 <br/>
+
 |Date|Title|Problems|
 |---|---|---|
 |2023.08.09|1. 배열(array) 시뮬레이션||
