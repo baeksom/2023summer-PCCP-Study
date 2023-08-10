@@ -1,8 +1,8 @@
 # 2023summer-PCCP-Study
 
-2023.08.09 ~ 2023.08.18
-PCCP test date - 2023.08.20(Sun)
-Language - Java
+2023.08.09 ~ 2023.08.18 \n
+PCCP test date - 2023.08.20(Sun) \n
+Language - Java \n
 
 |Date|Title|Problems|
 |---|---|---|
