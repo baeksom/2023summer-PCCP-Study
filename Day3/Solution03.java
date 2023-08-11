@@ -1,7 +1,7 @@
 import java.util.*;
 class Solution03 {
 	public int solution(int[] nums, int target){
-		int answer = 0;
+		int answer = -1;
 		int left = 0;
         int right = nums.length-1;
         
