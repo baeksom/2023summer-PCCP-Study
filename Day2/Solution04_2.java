@@ -1,7 +1,6 @@
 import java.util.*;
-class Solution {
+class Solution04_2 {
 	public int solution(String s){
-		int answer = 0;
 		HashMap<Character, Integer> map = new HashMap<>();
         for(char c : s.toCharArray()){
             map.put(c, map.getOrDefault(c, 0)+1);
@@ -16,7 +15,7 @@ class Solution {
 	}
 
 	public static void main(String[] args){
-		Solution T = new Solution();
+		Solution04_2 T = new Solution04_2();
 		System.out.println(T.solution("abcbbbccaaeee"));
 		System.out.println(T.solution("aabbccddee"));
 		System.out.println(T.solution("fgfgabtetaaaetytceefcecekefefkccckbsgaafffg"));
