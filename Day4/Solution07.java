@@ -4,7 +4,6 @@ class Solution07 {
 		int answer = 0;
         int sumN = 0;
         int left = 0;
-        ArrayList<Integer> al = new ArrayList<>();
         int window = nums.length - k; // 윈도우 개수
         for(int i=0; i<window; i++){
             sumN += nums[i];
